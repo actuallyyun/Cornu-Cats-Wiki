@@ -5,14 +5,19 @@ Encyclopedia
 {% endblock %}
 
 {% block body %}
-<h1>All:</h1>
 
-<ul>
-    {% for entry in entries %}
-    <li>
-        <a href="{% url 'encyclopedia:title' title=entry %}">{{ entry }}</a>
-    </li>
-    {% endfor %}
-</ul>
 
+<div class="card">
+    <div class="card-header">
+        <h1>All about Cornu Cats</h1>
+    </div>
+
+    <ul class="list-group list-group-flush">
+        {% for entry in entries %}
+        <li class="list-group-item">
+            <a href="{% url 'encyclopedia:title' title=entry %}">{{ entry }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock %}

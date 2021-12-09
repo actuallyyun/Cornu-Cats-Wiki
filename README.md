@@ -1,15 +1,16 @@
 # Project 01 in CS50W course: a wikipedia-like website 
 
-This is a simple web application wrote with Django. It consists of 6 html files.
+## Cats in Cornudella 
+This is a simple web application written with Python and Django. 
+People can log the cats they spot in town. 
+
+### Other functions include
 
 #### edit.html
-User can edit her/his own page
+User can edit her/his own entry page.
 
 #### index.html
-The default page, it shows all the entries, as well as have a search bar.
-
-#### layout.html
-The basic layout of the website.
+The default page, it shows all the entries, as well as has a search bar.
 
 #### new.html
 User can create a new entry page. The web app will check if this entry already exists.

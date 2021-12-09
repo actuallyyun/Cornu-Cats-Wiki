@@ -1,13 +1,13 @@
 {% extends "encyclopedia/layout.html" %}
-
+{% load template_extras %}
 {% block title %}
 Encyclopedia
 {% endblock %}
 
 {% block body %}
 <h1>{{ title }}</h1>
-{% load markdownify %}
-{{ content|markdownify }}
+
+{{ content|convert_markdown|safe }}
 <div>
     <form action="{% url 'encyclopedia:edit' title %}" method="POST">
         {% csrf_token %}
