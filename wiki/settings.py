@@ -120,4 +120,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://cornu-cats-wiki.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'cornu-cats-wiki.herokuapp.com']
