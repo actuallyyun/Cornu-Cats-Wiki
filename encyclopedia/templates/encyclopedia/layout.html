@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load template_extras %}
 <!DOCTYPE html>
 
 <html lang="en">
@@ -12,37 +12,38 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="sidebar col-lg-2 col-md-3">
-            <h2>Wiki</h2>
-            <form action="{% url 'encyclopedia:search' %}" method="GET">
+    <div class="container">
+        <div class="row">
+            <div class="sidebar col-lg-3 col-md-4">
+                <h2>Cornu Cats Wiki</h2>
+                <form action="{% url 'encyclopedia:search' %}" method="GET">
 
-                {{ form }}
+                    {{ form }}
 
-                <div class="search_button" style="margin-top: 10px">
-                    <button type="submit" class="btn btn-primary mb-2">Wiki Search</button>
+                    <div class="search_button" style="margin-top: 10px">
+                        <button type="submit" class="btn btn-primary mb-2">MeowMeow Search</button>
+                    </div>
+                </form>
+                <div>
+                    <a href="{% url 'encyclopedia:index' %}">Home</a>
                 </div>
-            </form>
-            <div>
-                <a href="{% url 'encyclopedia:index' %}">Home</a>
-            </div>
-            <div>
-                <a href="{% url 'encyclopedia:new' %}">Create New Page</a>
+                <div>
+                    <a href="{% url 'encyclopedia:new' %}">Spot a new Meow</a>
 
-            </div>
-            <div>
-                <a href="{% url 'encyclopedia:random' %}">Random Page</a>
+                </div>
+                <div>
+                    <a href="{% url 'encyclopedia:random' %}">Random Meow Dose</a>
 
+                </div>
+                {% block nav %}
+                {% endblock %}
             </div>
-            {% block nav %}
-            {% endblock %}
-        </div>
-        <div class="main col-lg-10 col-md-9">
-            {% block body %}
-            {% endblock %}
+            <div class="main col-lg-9 col-md-8">
+                {% block body %}
+                {% endblock %}
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>

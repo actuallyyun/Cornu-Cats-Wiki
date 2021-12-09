@@ -1,1 +1,0 @@
-Margalef is a village in Catalonia, Spain. It is situated on the edge of Montsant and is a popular ecotourism destination, especially among rock climbers. The rock type is conglomerate and it has more than 500 climbing routes of different grades, from 4 to 9b+.
